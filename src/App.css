@@ -1,0 +1,56 @@
+:root {
+  --colorPink: #ed5ab3;
+  --primary: #001b79;
+  --white: #fff;
+}
+
+@font-face {
+  font-family: GE_SS_Two;
+  src: url(./assets/fonts/GE_SS_Two_Medium.otf);
+}@font-face {
+  font-family: alfont_com;
+  src: url(./assets/fonts/alfont_com_Wahran-Light.otf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #b5b6b7;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #b5b6b7;
+  border-radius: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font-family: GE_SS_Two !important;
+}
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.font_en {
+  font-family: "Poppins", sans-serif !important;
+}
+.ar {
+  direction: rtl;
+}
+.en {
+  direction: ltr;
+}
+.color_pink {
+  color: var(--colorPink);
+}
+.primary {
+  color: var(--primary);
+}

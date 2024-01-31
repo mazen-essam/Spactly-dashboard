@@ -1,0 +1,139 @@
+.Sidebar {
+   transition: all ease-in-out 500ms;
+   z-index: 1000;
+}
+.a_sidebar {
+   text-align: center;
+   font-size: 16px;
+   font-weight: 400 !important;
+   list-style-type: none;
+   color: #001b79 !important ;
+}
+.li_sidebar {
+   width: 100% !important;
+   height: 52px;
+   border-radius: 4px;
+   position: relative;
+}
+
+.li_sidebar:hover {
+   background: rgba(255, 255, 255);
+}
+.li_sidebar:hover .a_sidebar {
+   /* color: #fff !important; */
+   opacity: 1 !important;
+}
+
+.li_sidebar.active {
+   background: rgb(255, 255, 255, 0.15);
+}
+.li_sidebar.active .a_sidebar {
+   color: #001b79 !important ;
+   opacity: 1 !important;
+}
+.margin_close {
+   margin: 10px auto -20px 10px;
+}
+.span_lang {
+   /* padding-left: 40px; */
+   padding-right: 40px;
+}
+.span_ul_sidebar::before {
+   content: "";
+   width: 4px;
+   height: 50px;
+   background-color: #fff;
+   position: absolute;
+   right: 0;
+}
+
+.sec_toggle {
+   display: none;
+}
+.button_toggle {
+   display: block;
+}
+.d_none {
+   display: none;
+}
+.d_flex {
+   display: flex;
+}
+.special {
+   color: var(--primary, #001b79);
+   /* text-align: left; */
+   /* font-family: "GE SS Two"; */
+   font-size: 0.875rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 1.5rem; /* 171.429% */
+   opacity: 0.5;
+   padding-right: 3.8rem;
+}
+.sidebar-img-fix {
+   width: 1em;
+   height: 1em;
+}
+.profile-S {
+   background: var(--white, #fff);
+   border-radius: 1.5625rem;
+   padding-top: 2rem;
+}
+.profile-S .profile-img {
+   position: relative;
+}
+.profile-S .profile-img::before {
+   content: "تجريبية";
+   color: var(--white, var(--Shade-White, #fff));
+   /* text-align: right; */
+   /* font-family: Montserrat-Arabic; */
+   font-size: 0.875rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.5rem; /* 171.429% */
+   border-radius: 0.625rem;
+   background: #ed5ab3;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   padding: 0.2rem 1rem;
+   position: absolute;
+   top: -0.5rem;
+   left: 3.3rem;
+   z-index: 5;
+   display: inline-block;
+}
+.profile-S .word-info h6 {
+   color: var(--primary, #001b79);
+
+   font-size: 0.875rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 1.5rem; /* 171.429% */
+   opacity: 0.5;
+}
+.profile-S .word-info p {
+   color: var(--primary, #001b79);
+
+   font-size: 0.875rem;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 1.5rem; /* 171.429% */
+}
+.profile-S .upgrade-btn {
+   border-radius: 3.125rem;
+   background: linear-gradient(270deg, #ed5ab3 0%, #001b79 100%);
+   box-shadow: 10px 10px 50px 0px rgba(237, 90, 179, 0.15); 
+   color: #fff;
+}
+.profile-S .btn:hover {
+  color: #fff;
+}
+
+
+@media screen and (min-width: 1200px) {
+   .sec_toggle {
+      display: block !important;
+   }
+   .button_toggle {
+      display: none;
+   }
+}

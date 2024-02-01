@@ -19,9 +19,11 @@ export default function BarChart() {
                         cornerRadius: 5,
                         startAngle: -90,
                         endAngle: 90,
-                        cx: 190,
+                        cx: 150,
                         cy: 150,
+                    
                     }]}
+                    // className='w-50 m-auto'
                     height={200}
             />
             </div>

@@ -20,7 +20,7 @@ const xLabels = [
 ];
 
 export default function SimpleLineChart() {
-    const [length ,setLength] = useState(700)
+    const [length ,setLength] = useState(800)
     // if (xLabels.length >= 5){
     //     setLength(500)
     // }
@@ -33,8 +33,9 @@ export default function SimpleLineChart() {
     // }
     return (
         <LineChart
-            width={length}
+            // width={length}
             height={300}
+            className='w-100'
             series={[
                 { data: pData, label: 'pv' },
                 { data: uData, label: 'uv' },

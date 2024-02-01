@@ -20,6 +20,9 @@ import prof from "../../assets/images/user-2.svg";
 import setting2 from '../../assets/images/filters-2.svg'
 import grid2_setting from '../../assets/images/grid-2-horizontal.svg'
 import login from '../../assets/images/login.svg'
+import ShowMoreText from 'react-show-more-text';
+
+// import ReactShowMoreText from "react-show-more-text";
 // const Card = ({ number, text, color }) => {
 //    return (
 //       <div className="card" style={{ backgroundColor: color }}>
@@ -34,12 +37,12 @@ import login from '../../assets/images/login.svg'
 export default function Control() {
    const [expend, setexpend] = useState(false);
    const [search, setSearch] = useState('')
-   const [showMore ,setShowMore] = useState(false)
-   const HandleShow = ()=>{
-      if (showMore == true){
+   const [showMore, setShowMore] = useState(false)
+   const HandleShow = () => {
+      if (showMore == true) {
          setShowMore(false)
       }
-      else{
+      else {
          setShowMore(true)
       }
    }
@@ -86,7 +89,7 @@ export default function Control() {
                                     <LazyLoadImage src={Avatar} effect="blur" opasity='0.5' alt="profile-pic-sm" placeholderSrc={Avatar} />
                                  </div>
                               </div>
-                             {showMore && <div className="overlay p-4 rounded-4 blue">
+                              {showMore && <div className="overlay p-4 rounded-4 blue">
                                  <div className="d-flex align-items-center mb-4">
                                     <div className="col-2"><LazyLoadImage src={Avatar} className=" w-100" />
                                     </div>
@@ -170,13 +173,22 @@ export default function Control() {
                      </div>
                      <div className="welcome p-4">
                         <h2>مرحبا جواد</h2><p className="welcome-p mt-4">مجموعة الأدوات الأكثر تطورًا في مجال الذكاء الاصطناعي متوفرة هنا</p>
-                        <div className="d-flex justify-content-between">
+                        <div className="row justify-content-between">
                            {cardData.map(item => {
                               return (
-                                 <div className="p-3" key={item.id}>
+                                 <div className="p-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 " >
                                     <div className={`img${item.number} p-4 px-2 d-flex flex-column justify-content-between`} key={item.id}>
                                        <div className="">
-                                          <h4>{item.title}</h4><p>{item.text}</p></div>
+                                          <h4>{item.title}</h4><ShowMoreText
+                                             lines={4} // Number of lines to display initially
+                                             more="Show More"
+                                             className="para"
+                                             less="Show Less"
+                                             anchorClass="more-btn"
+                                             expanded={false}
+                                          >
+                                             {item.text}
+                                          </ShowMoreText></div>
                                        <div className="d-flex justify-content-between bottom-arrow">
                                           <p className="num fs-1">{item.number}</p>
                                           <div className="arrow-welcome w-25">
@@ -192,10 +204,10 @@ export default function Control() {
                      </div>
                      <div className="charts en mt-5">
                         <div className="row justify-content-between justify-sm-content-center">
-                           <div className="col-xl-8 col-lg-8 col-md-8 chart1 col-12">
+                           <div className="col-xl-8 col-lg-8 col-md-12 chart1 col-12">
                               <SimpleLineChart />
                            </div>
-                           <div className="col-xl-4 col-lg-4 col-md-8 col-6">
+                           <div className="col-xl-4 col-lg-4 col-md-12 col-12">
                               <BarChart />
                            </div>
 

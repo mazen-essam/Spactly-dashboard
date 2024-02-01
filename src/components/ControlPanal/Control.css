@@ -41,9 +41,8 @@
    /* padding: 0.5rem; */
    text-align: center;
 }
-.Control .nav-c .overlay .a_sidebar{
+.Control .nav-c .overlay .a_sidebar {
    font-size: 0.75rem;
-   
 }
 .Control .nav-c .item {
    background-color: #f0f4f9;
@@ -95,15 +94,15 @@
 .Control .welcome .bottom-arrow {
    margin-top: 7rem;
 }
-.Control .welcome .img24 .bottom-arrow{
+.Control .welcome .img24 .bottom-arrow {
    margin-top: 7.7rem;
 }
-.Control .welcome .img55 .bottom-arrow{
-margin-top: 6.7rem;
+.Control .welcome .img55 .bottom-arrow {
+   margin-top: 6.7rem;
 }
-.Control .welcome .bottom-arrow p {
+.Control .welcome .bottom-arrow .para {
    color: #001b79;
-   font-family: Inter;
+   font-family: Montserrat-Arabic;
    font-size: 4.0625rem;
    font-style: normal;
    font-weight: 700;
@@ -223,60 +222,88 @@ margin-top: 6.7rem;
    .Control .welcome .bottom-arrow {
       margin-top: 7rem;
    }
-   .Control .welcome .img24 .bottom-arrow{
+   .Control .welcome .img24 .bottom-arrow {
       margin-top: 7.7rem;
    }
-   .Control .welcome .img55 .bottom-arrow{
-   margin-top: 6.7rem;
+   .Control .welcome .img55 .bottom-arrow {
+      margin-top: 6.7rem;
    }
- }
- 
- /* 1700px to 1800px */
- @media only screen and (max-width: 1799px) and (min-width: 1700px) {
+}
+
+/* 1700px to 1800px */
+@media only screen and (max-width: 1799px) and (min-width: 1700px) {
    /* Your styles for screens between 1700px and 1799px go here */
    .Control .welcome .bottom-arrow {
       margin-top: 5rem;
    }
-   .Control .welcome .img12 .bottom-arrow{
+   .Control .welcome .img12 .bottom-arrow {
       margin-top: 7rem;
-
    }
-   .Control .welcome .img24 .bottom-arrow{
+   .Control .welcome .img24 .bottom-arrow {
       margin-top: 5.7rem;
    }
-   .Control .welcome .img55 .bottom-arrow{
-   margin-top: 4.7rem;
+   .Control .welcome .img55 .bottom-arrow {
+      margin-top: 4.7rem;
    }
- }
- 
- /* 1600px to 1700px */
- @media only screen and (max-width: 1699px) and (min-width: 1600px) {
+}
+
+/* 1600px to 1700px */
+@media only screen and (max-width: 1699px) and (min-width: 1600px) {
    /* Your styles for screens between 1600px and 1699px go here */
    .Control .welcome .bottom-arrow {
       margin-top: 3rem;
    }
-   .Control .welcome .img24 .bottom-arrow{
+   .Control .welcome .img24 .bottom-arrow {
       margin-top: 3.7rem;
    }
-   .Control .welcome .img55 .bottom-arrow{
-   margin-top: 2.7rem;
+   .Control .welcome .img55 .bottom-arrow {
+      margin-top: 2.7rem;
    }
- }
- 
- /* ... repeat for each 100px interval */
- 
- /* 1100px to 1200px */
- @media only screen and (max-width: 1199px) and (min-width: 1100px) {
-   /* Your styles for screens between 1100px and 1199px go here */
- }
- 
- /* 1000px to 1100px */
- @media only screen and (max-width: 1099px) and (min-width: 1000px) {
-   /* Your styles for screens between 1000px and 1099px go here */
- }
- 
- /* 1024px to 1000px */
- @media only screen and (max-width: 999px) and (min-width: 1024px) {
-   /* Your styles for screens between 1024px and 999px go here */
- }
- 
+}
+@media only screen and (max-width: 1599px) {
+   .Control .welcome .bottom-arrow {
+      margin-top: 0rem;
+   }
+   .Control .welcome .img24 .bottom-arrow {
+      margin-top: 0rem;
+   }
+   .Control .welcome .img55 .bottom-arrow {
+      margin-top: 0rem;
+   }
+}
+@media only screen and (max-width: 575px) {
+   .Control .welcome .img55 {
+      background-image: url("../../assets/images/Vector 911.jpg");
+      background-size: cover;
+      background-position: bottom;
+      border-radius: 3.1rem;
+      background-repeat: no-repeat;
+   }
+   .Control .welcome .img12 {
+      background-image: url("../../assets/images/Vector 912.svg");
+      background-size: cover;
+      background-position: bottom;
+      border-radius: 3.1rem;
+      background-repeat: no-repeat;
+   }
+   .Control .welcome .img24 {
+      background-image: url("../../assets/images/Vector 913.jpg");
+      background-size: cover;
+      background-position: bottom;
+      border-radius: 3.1rem;
+      background-repeat: no-repeat;
+   }
+   .Control .welcome .img08 {
+      background-image: url("../../assets/images/Vector 914.svg");
+      background-size: cover;
+      background-position: bottom;
+      border-radius: 3.1rem;
+      background-repeat: no-repeat;
+   }
+   .Control .welcome .arrow-welcome {
+      /* width: 22% !important; */
+   }
+}
+/* ... repeat for each 100px interval */
+
+/* 1100px to 1200px */

@@ -38,9 +38,9 @@ export default function TableC() {
                 <div className='col-1'>
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onChange={handleSelectAllChange} checked={checkboxes.every((checkbox) => checkbox.checked)} />
                 </div>
-                <div className='col-5'><p>الاسم</p></div>
-                <div className='col-1'><p>الحالة</p></div>
-                <div className='col-1'><p>تم انشاءه</p></div>
+                <div className='col-xl-5 col-lg-5 col-md-5 col-sm-5 col-3'><p>الاسم</p></div>
+                <div className='col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2'><p>الحالة</p></div>
+                <div className='col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2'><p>تم انشاءه</p></div>
                 <div className='col-4'>
                     <LazyLoadImage src={setting} className='img d-block text-end me-auto ' />
                 </div>
@@ -51,9 +51,9 @@ export default function TableC() {
                         <div className='col-1'>
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onChange={() => handleCheckboxChange(item.id)} checked={item.checked} />
                         </div>
-                        <div className='col-5 '><p>{item.label}</p></div>
-                        <div className='col-1'><p>{item.condtion ? <p>not empty</p> : <p className='condtion w-50 text-center'>فارغ</p>}</p></div>
-                        <div className='col-1'><p>{item.created}</p></div>
+                        <div className='col-xl-5 col-lg-5 col-md-5 col-sm-5 col-3 '><p>{item.label}</p></div>
+                        <div className='col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2'><p>{item.condtion ? <p>not empty</p> : <p className='condtion w-50 text-center'>فارغ</p>}</p></div>
+                        <div className='col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2'><p>{item.created}</p></div>
                         <div className='col-4'>
                             <LazyLoadImage src={menu} className='img d-block text-end me-auto ' />
                         </div>
